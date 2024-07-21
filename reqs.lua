@@ -1,4 +1,4 @@
-local lastApiVersion = 1
+local lastApiVersion = 1.1
 local lastRecorderVersion = 1.5
 local branch = "public"
 
