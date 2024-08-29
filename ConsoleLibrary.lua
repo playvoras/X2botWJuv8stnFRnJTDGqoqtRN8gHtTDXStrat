@@ -1,8 +1,8 @@
 --[[
 // ConsoleLibrary forked from : https://github.com/Sigmanic/Strategies-X
-// BeautyTable forked from : https://github.com/Ozzypig/repr
+// BeautyTable (repr) forked from : https://github.com/Ozzypig/repr
 ]]
-local BeautyTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/DEVIX7/TableBeauty/master/repr.lua"))()
+local BeautyTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/DEVIX7/BeautyTable_repr_Lua/master/repr.lua"))()
 local ConsoleUI = if getthreadidentity and getthreadidentity() < 7 then loadstring(game:HttpGet("https://raw.githubusercontent.com/DEVIX7/RBX-ImGui/main/RBXImGui3.lua"))() else loadstring(game:HttpGet("https://raw.githubusercontent.com/DEVIX7/RBX-ImGui/main/RBXImGuiSource.lua"))()
 
 local Window = ConsoleUI.new({
