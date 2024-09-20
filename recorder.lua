@@ -206,32 +206,32 @@ v22 = hookmetamethod(game, "__namecall", function(v39, ...)
 			local v63 = string.format("%.2f", v62)
 			local v64 = ""
 			local v58 = v39.Name
-			if v58 == v7("\42\225\185\179\169\137\168\13\232\170", "\199\122\141\216\208\204\221") then
+			if v58 == "PlaceTower" then
 				v64 = string.format('api:place(%d,"%s",%.2f,%s)\n', v60, v61, v63, table.concat(v59, v7("\225\157", "\150\205\189\112\144\24")))
-			elseif v58 == v7("\1\141\185\74\13\139\4\28\49\157\137\67\16\141\50\17\54\144", "\112\69\228\223\44\100\232\113") then
+			elseif v58 == "DifficultyVoteCast" then
 				v64 = string.format("api:diff(%s)\n", table.concat(v59, v7("\152\95", "\230\180\127\103\179\214\28")))
-			elseif v58 == v7("\185\21\91\71\240\68\204\131\4\91\73\241\85", "\128\236\101\63\38\132\33") then
+			elseif v58 == "UpdateLoadout" then
 				v64 = string.format('api:loadout(%d,"%s",%.2f,%s)\n', v60, v61, v63, table.concat(v59, v7("\224\233", "\175\204\201\113\36\214\139")))
-			elseif v58 == v7("\116\201\57\208\48\72\219\48\206", "\100\39\172\85\188") then
+			elseif v58 == "SellTower" then
 				v64 = string.format('api:sell(%d,"%s",%.2f,%s)\n', v60, v61, v63, table.concat(v59, v7("\225\56", "\83\205\24\217\224")))
-			elseif v58 == v7("\210\202\218\56\244\240\221\58\244\196\201\56\212\192\220\40\227\214\217", "\93\134\165\173") then
+			elseif v58 == "TowerUpgradeRequest" then
 				v64 = string.format('api:update(%d,"%s",%.2f,%s)\n', v60, v61, v63, table.concat(v59, v7("\242\178", "\30\222\146\161\162\90\174\210")))
-			elseif v58 == v7("\198\70\113\4\226\75\65\31\224\92\105\62\252\94\117", "\106\133\46\16") then
+			elseif v58 == "ChangeQueryType" then
 				v64 = string.format('api:targettype(%d,"%s",%.2f,%s)\n', v60, v61, v63, table.concat(v59, v7("\20\96", "\32\56\64\19\156\58")))
-			elseif v58 == v7("\110\199\242\83\72\199\147\95\233\231\95\86\251\148\67\250\224\71\79\247\147\78", "\224\58\168\133\54\58\146") then
+			elseif v58 == "TowerUseAbilityRequest" then
 				v64 = string.format('api:useability(%d,"%s",%.2f,%s)\n', v60, v61, v63, table.concat(v59, v7("\21\22", "\107\57\54\43\157\21\230\231")))
-			elseif v58 == v7("\233\142\5\244\171\219\202\207\191\30\226\188\206", "\175\187\235\113\149\217\188") then
+			elseif v58 == "RetargetTower" then
 				v64 = string.format('api:retarget(%d,"%s",%.2f,%s)\n', v60, v61, v63, table.concat(v59, v7("\112\239", "\24\92\207\225\44\131\25")))
-			elseif v58 == v7("\120\216\177\92\44\124\93\214\142\67\15\120\104\210\171\88", "\29\43\179\216\44\123") then
+			elseif v58 == "SkipWaveVoteCast" then
 				v64 = string.format('api:skip(%d,"%s",%.2f,%s)\n', v60, v61, v63, table.concat(v59, v7("\241\153", "\44\221\185\64")))
-			elseif v58 == v7("\51\226\89\74\118\18\243\125\76\118\49\232\95\90\97\52\247", "\19\97\135\40\63") then
+			elseif v58 == "RequestUsePowerUp" then
 				v64 = string.format('api:usepowerup(%d,"%s",%.2f,%s)\n', v60, v61, v63, table.concat(v59, v7("\226\28", "\81\206\60\83\91\79")))
 			end
 			if v64 then
 				appendfile(v15 .. v7("\0\191\200\102", "\196\46\203\176\18\79\163\45"), v64)
-				print(v7("\131\16\91\61\11\201\203\157\16\62\40", "\143\216\66\30\126\68\155") .. v10 .. v7("\151\136\63\206\198\172\197\229\175\204\77\234\198\183\222\238\164\146\77", "\129\202\168\109\171\165\195\183") .. v58)
+				print("[RECORDER V") .. v10 .. "] Recorded Action: " .. v58)
 			else
-				print(v7("\25\106\18\251\241\38\194\7\106\119\238", "\134\66\56\87\184\190\116") .. v10 .. v7("\1\113\58\176\16\251\49\48\56\113\40\184\13\226\46\59\102\113", "\85\92\81\105\219\121\139\65") .. v58)
+				print("[RECORDER V") .. v10 .. "] Skipped Action: ") .. v58)
 			end
 		end)
 	end
