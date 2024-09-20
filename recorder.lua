@@ -90,15 +90,15 @@ for v27, v28 in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Interface
 	end
 end
 getgenv().Loadout = table.concat(v16, v7("\247\153", "\126\219\185\34\61"))
-local v18 = v7("\65\131", "\135\108\174\62\18\30\23\147") .. v10 .. '\nlocal api = loadstring(game:HttpGet("https://raw.githubusercontent.com/DEVIX7/X2botWJuv8stnFRnJTDGqoqtRN8gHtTDXStrat/master/API/API.lua", true))()\napi:loadout({' .. getgenv().Loadout .. '})\napi:map("' .. getgenv().MapName .. '")\n'
+local v18 = "-- " .. v10 .. '\nlocal api = loadstring(game:HttpGet("https://raw.githubusercontent.com/DEVIX7/X2botWJuv8stnFRnJTDGqoqtRN8gHtTDXStrat/master/API/API.lua", true))()\napi:loadout({' .. getgenv().Loadout .. '})\napi:map("' .. getgenv().MapName .. '")\n'
 writefile(v15 .. ".txt", v18)
 print(
-	v7("\134\241\54\88\184\165\146\176\54\88\238\174\147\167", "\199\235\144\82\61\152"),
-	v7("\60\36\156\8\40\36\157\14\53\86\143", "\75\103\118\217") ..
-		v10 .. v7("\250\20\66\17\186\17\213\80\121\26\190\94\212\64\113\6\173\80\137\26", "\126\167\52\16\116\217")
+	"made by devix7",
+	"[RECORDER V" ..
+		v10 .. "] Recording start..."
 )
-print(v7("\251\58\50\129\160\89\242\201\35\37\192\233\89", "\156\168\78\64\224\212\121") .. v15)
-print(v7("\42\239\181\142\9\239\168\203\71\179\229", "\174\103\142\197") .. getgenv().MapName)
+print("Strat name = ") .. v15)
+print("Map name = ") .. getgenv().MapName)
 local v19 = ""
 local v20 = tick()
 local function v21()
