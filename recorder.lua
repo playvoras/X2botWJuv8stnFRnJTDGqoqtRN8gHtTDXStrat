@@ -24,7 +24,7 @@ if tostring(latestVersion) ~= scriptVersion then
 end
 
 getgenv().StratName = getgenv().StratName or "recorder_strat" .. os.clock()
-getgenv().MapName = getgenv().MapName or (warn("Input map name in `getgenv().MapName`"), return false)
+getgenv().MapName = getgenv().MapName or (warn("Input map name in `getgenv().MapName"))
 
 local stratName = tostring(getgenv().StratName)
 local loadout = {}
