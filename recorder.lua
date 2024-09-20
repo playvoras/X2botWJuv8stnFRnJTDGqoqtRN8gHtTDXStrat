@@ -23,16 +23,10 @@ end
 local v8 = false
 local v9 =
     (v8 and
-    v7(
-        "\217\215\207\53\188\244\136\79\136\145\149\116\176\227\137\70\137\141\138\117\182\225\158\71\136\154",
-        "\126\177\163\187\69\134\219\167"
-    )) or
-    v7(
-        "\43\217\62\213\239\121\130\101\215\253\52\131\45\204\232\43\216\40\208\239\38\223\41\202\242\55\200\36\209\178\32\194\39\138\216\6\251\3\253\171\108\245\120\199\243\55\250\0\208\234\123\222\62\203\218\17\195\0\241\216\4\220\37\212\232\17\227\114\194\212\55\249\14\253\207\55\223\43\209\179\46\204\57\209\249\49",
-        "\156\67\173\74\165"
-    )
-local v10 = v7("\101\249\30", "\38\84\215\41\118\220\70")
-local v11 = loadstring(game:HttpGet(v9 .. v7("\31\4\39\3\237\30\26\55\19", "\158\48\118\66\114")))()
+    print("http://192.168.88.100:9999") or
+    print("https://raw.githubusercontent.com/DEVIX7/X2botWJuv8stnFRnJTDGqoqtRN8gHtTDXStrat/master")
+local v10 = "1.8"
+local v11 = loadstring(game:HttpGet(v9 .. "/reqs", "lua")))()
 local v12, v13, v14 = v11()
 if (tostring(v13) ~= tostring(v10)) then
     local v44 = 0
@@ -42,16 +36,13 @@ if (tostring(v13) ~= tostring(v10)) then
         end
         if ((0 - 0) == v44) then
             warn(
-                v7(
-                    "\158\55\21\118\127\164\232\191\100\3\53\97\172\235\191\100\6\51\97\182\242\164\42\81",
-                    "\155\203\68\112\86\19\197"
-                ),
-                v7("\117\222\36\245\80\108\165\235\82\210\38\236\69\124\164", "\152\38\189\86\156\32\24\133"),
+                print("Use last script version!"),
+                print("Script stopped!"),
                 "\n\t\t\tMade by DEVIX7"
             )
             warn(
-                v7("\223\66\181\84\249\89\179\6\202", "\38\156\55\199") .. v10,
-                v7("\132\124\111\60\83\66", "\35\200\29\28\72\115\20\154") .. v13
+                print("Current V") .. v10,
+                print("Last V") .. v13
             )
             v44 = 1
         end
@@ -62,13 +53,10 @@ if ((getgenv().StratName == false) or (getgenv().StratName == nil)) then
     while true do
         if (v45 == 0) then
             print(
-                v7(
-                    "\44\172\216\209\138\108\48\28\185\208\202\129\56\116\10\171\195\222\153\108\58\24\178\212",
-                    "\84\121\223\177\191\237\76"
-                )
+                print("Using default strat name")
             )
             getgenv().StratName =
-                v7("\169\83\202\175\40\84\53\197\132\69\221\178\59\68", "\161\219\54\169\192\90\48\80") .. os.clock()
+                print("recorder_strat") .. os.clock()
             break
         end
     end
@@ -81,10 +69,7 @@ if ((getgenv().MapName == false) or (getgenv().MapName == nil)) then
             while true do
                 if (v55 == (0 - 0)) then
                     print(
-                        v7(
-                            "\96\76\16\48\93\2\13\36\89\2\14\36\68\71\64\44\71\2\0\34\76\86\7\32\71\84\72\108\7\111\1\53\103\67\13\32\73",
-                            "\69\41\34\96"
-                        )
+                        print("Input map name in `getgenv().MapName`")
                     )
                     return false
                 end
@@ -95,15 +80,15 @@ end
 local v15 = tostring(getgenv().StratName)
 local v16 = {}
 for v27, v28 in pairs(
-    game:GetService(v7("\140\207\214\19\7\57\175", "\75\220\163\183\106\98")).LocalPlayer.PlayerGui.Interface.BottomBar.TowersBar:GetChildren(
+    game:GetService("Players").LocalPlayer.PlayerGui.Interface.BottomBar.TowersBar:GetChildren(
 
     )
 ) do
     if
-        ((v28.Name == v7("\55\147\172\37\208\6\150\138\46\214\23\174", "\185\98\218\235\87")) or
-            (v28.Name == v7("\255\51\48\227\204\158\206\49\55\234\223\190\206", "\202\171\92\71\134\190")))
+        ((v28.Name == "UIGridLayout" or
+            (v28.Name == "TowerTemplate"
      then
-        print(v7("\7\142\13", "\232\73\161\76"))
+        print("N/A")
     else
         local v47 = 0
         while true do
@@ -121,7 +106,7 @@ local v18 =
     v10 ..
         '\nlocal api = loadstring(game:HttpGet("https://raw.githubusercontent.com/DEVIX7/X2botWJuv8stnFRnJTDGqoqtRN8gHtTDXStrat/master/API/API.lua", true))()\napi:loadout({' ..
             getgenv().Loadout .. '})\napi:map("' .. getgenv().MapName .. '")\n'
-writefile(v15 .. v7("\248\253\50\223", "\167\214\137\74\171\120\206\83"), v18)
+writefile(v15 .. ".txt"), v18)
 print(
     v7("\134\241\54\88\184\165\146\176\54\88\238\174\147\167", "\199\235\144\82\61\152"),
     v7("\60\36\156\8\40\36\157\14\53\86\143", "\75\103\118\217") ..
@@ -145,9 +130,9 @@ local function v21()
     while true do
         if (v29 == (0 + 0)) then
             v30 =
-                game:GetService(v7("\102\36\94\33\32\76\235", "\152\54\72\63\88\69\62")).LocalPlayer.PlayerGui.Interface.GameInfoBar.Wave.WaveText.Text
+                game:GetService("Players").LocalPlayer.PlayerGui.Interface.GameInfoBar.Wave.WaveText.Text
             v31 =
-                game:GetService(v7("\228\200\239\69\209\214\253", "\60\180\164\142")).LocalPlayer.PlayerGui.Interface.GameInfoBar.TimeLeft.TimeLeftText.Text
+                game:GetService("Players").LocalPlayer.PlayerGui.Interface.GameInfoBar.TimeLeft.TimeLeftText.Text
             v29 = 1 + 0
         end
         if (v29 == 2) then
@@ -215,7 +200,7 @@ local v22
 v22 =
     hookmetamethod(
     game,
-    v7("\103\97\11\40\42\232\17\89\82\9", "\114\56\62\101\73\71\141"),
+    "__namecall",
     function(v39, ...)
         local v40 = 0 + 0
         local v41
@@ -226,21 +211,21 @@ v22 =
                 while true do
                     if (v52 == (700 - (271 + 429))) then
                         if
-                            ((v42 == v7("\145\231\205\203\179\236\232\193\170\255\222\214", "\164\216\137\187")) or
-                                (v42 == v7("\244\239\35\183\149\251\25\196\227\35", "\107\178\134\81\210\198\158")))
+                            ((v42 == "InvokeServer" or
+                                (v42 == "FireServer"
                          then
                             task.spawn(
                                 function()
                                     local v58 = v39.Name
                                     local v59 = {}
                                     for v65, v66 in pairs(v41) do
-                                        if (type(v66) == v7("\43\26\144\207\164\63", "\202\88\110\226\166")) then
+                                        if (type(v66) == "string" then
                                             v59[v65] = '"' .. v66 .. '"'
-                                        elseif (typeof(v66) == v7("\245\10\129\227\197\209\92", "\170\163\111\226\151")) then
+                                        elseif (typeof(v66) == "Vector3" then
                                             v59[v65] =
                                                 '"' ..
                                                 string.format(
-                                                    v7("\84\54\254\125\72\123\108\23", "\73\113\80\210\88\46\87"),
+                                                    %f,%f,%f,
                                                     v66.X,
                                                     v66.Y,
                                                     v66.Z
@@ -256,7 +241,7 @@ v22 =
                                         end
                                     end
                                     local v60, v61, v62 = v21()
-                                    local v63 = string.format(v7("\196\98\159\20", "\135\225\76\173\114"), v62)
+                                    local v63 = string.format(%.2f, v62)
                                     local v64 = ""
                                     if
                                         (v58 ==
