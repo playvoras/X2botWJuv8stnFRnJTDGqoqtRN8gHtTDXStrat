@@ -1,4 +1,4 @@
-local lastApiVersion = 1.4
+local lastApiVersion = 1.41
 local lastRecorderVersion = 1.7
 local branch = "public-alpha"
 
